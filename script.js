@@ -39,9 +39,9 @@ function newQuote() {
 
 async function getQuotes() {
   showLoadingSpinner();
-  //   const BASE_URL = "https://type.fit/api/quotes";
-  const BASE_URL =
-    "https://jacintodesign.github.io/quotes-api/data/quotes.json";
+  const BASE_URL = "https://type.fit/api/quotes";
+  // const BASE_URL =
+  //   "https://jacintodesign.github.io/quotes-api/data/quotes.json";
   try {
     const response = await fetch(BASE_URL);
     apiQuotes = await response.json();
